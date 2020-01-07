@@ -1,0 +1,1158 @@
+/* basis indstillinger */
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.9rem;
+    font-size: 1.7rem;
+    margin: 0;
+    font-weight: 200;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 32px;
+    color: white;
+
+    letter-spacing: 0.5px;
+}
+
+#cv p {
+    color: black;
+}
+
+
+
+/* indstillinger for nav */
+
+#nav {
+    width: 100%;
+    background-color: #ADADAD;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 3rem;
+    position: fixed;
+}
+
+#nav a:hover {
+    color: black;
+    filter: opacity(100%);
+}
+
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.9rem;
+
+    margin: 0;
+    font-weight: 200;
+}
+
+a:hover {
+    filter: opacity(50%);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+#tilbageknap {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-left: 14px;
+}
+
+/* classes der bliver tilføjet og fjernet */
+.hide {
+    display: none;
+}
+
+.hidden {
+    /*
+    transform: translateY(-100%);
+    opacity: 0;
+*/
+    transform: scale(0);
+}
+
+.hide1 {
+    opacity: 0;
+}
+
+
+
+/* nav */
+#menu {
+    list-style-type: none;
+    transform-origin: top left;
+
+    padding-left: 0px;
+    /*    margin-top: 0px list-style-type: none;*/
+    transition: transform 1s;
+    transform-origin: top right;
+    position: absolute;
+
+    min-width: 170px;
+
+    right: 1rem;
+    border-radius: 0.8rem;
+
+    top: 8vw;
+
+
+}
+
+
+
+#menuknap {
+    font-size: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 14px;
+    text-align: right;
+    position: relative;
+}
+
+
+
+#lukkeknap {
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    margin-right: 14px;
+    text-align: right;
+    position: relative;
+}
+
+
+
+
+
+
+
+#menuknap {
+    padding-bottom: 7px;
+}
+
+
+
+/*media nav mobil */
+@media only screen and (min-width: 500px) {
+    #menu {
+        background-color: #6E6E6E;
+        padding: 1rem;
+    }
+
+    li {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #menuknap {
+        /*        display: block;*/
+    }
+
+
+
+
+}
+
+/* media nav web */
+@media only screen and (min-width: 600px) {
+    #menu {
+        opacity: 1;
+        list-style-type: none;
+        transition: transform.3s;
+        transform-origin: top left;
+        display: flex;
+        justify-content: flex-end;
+        position: sticky;
+        width: 100%;
+        margin-right: 0;
+        background-color: transparent;
+        padding: 0;
+        padding-bottom: 5px;
+        transform: scale(1);
+
+
+    }
+
+    #menuknap {
+        display: none;
+        pointer-events: none;
+    }
+
+    a {
+        margin-right: 25px;
+        margin-left: 25px;
+
+    }
+
+    li {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+
+
+}
+
+/* footer */
+
+footer {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    background-color: #ADADAD;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 20px;
+}
+
+/*startside */
+
+#startbody .sectionswrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+#startbody .sectionswrapper .splashimage {
+    display: flex;
+    flex-wrap: nowrap;
+
+    flex-grow: 1;
+    flex-basis: 600px;
+}
+
+#startbody .splashimageWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+
+    flex-grow: 1;
+    flex-basis: 600px;
+
+}
+
+
+
+@media only screen and (min-width: 500px) {
+    #startbody img {
+        object-fit: cover;
+        object-position: right;
+
+    }
+
+}
+
+@media only screen and (min-width: 780px) {
+    #startbody img {
+        object-fit: cover;
+        object-position: right;
+
+    }
+
+}
+
+/* menu */
+
+
+
+#menubody .links_til_opgaver {
+    margin: 0;
+}
+
+
+#menubody #opgaver {
+    max-width: 1280px;
+}
+
+#menubody .sectionswrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+
+}
+
+#menubody .container {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-basis: 1280px;
+    flex-grow: 1;
+}
+
+#menubody .contentboks {
+    flex-basis: 200px;
+    flex-grow: 1;
+    max-width: 350px;
+    transition: 1s;
+}
+
+#menubody .contentboks:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+#menubody img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/*medi mobil */
+@media only screen and (min-width: 500px) {
+
+
+    #menubody .contentboks {
+        margin: 15px;
+    }
+
+    #menubody #nav {
+        position: relative;
+    }
+
+}
+
+
+/* media web */
+@media only screen and (min-width: 600px) {
+    #menubody .sectionswrapper {
+        margin-top: 5px;
+    }
+
+    #menubody #nav {
+        position: relative;
+    }
+
+
+
+    #menubody .contentboks {
+        max-width: 300px;
+    }
+
+
+}
+
+
+
+/* cv */
+
+
+
+#cvbody .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 47px;
+}
+
+
+
+#cvbody .col1_top {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#cvbody .col2_top {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 3rem;
+}
+
+#cvbody .image {
+    width: 100%;
+    margin: 0;
+}
+
+#cvbody .row_reverse {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+#cvbody .uddannelsesbillede_2 img {
+    transform: rotate(90deg);
+}
+
+/*portfolio */
+
+
+
+#portfoliobody .sectionswrapper {
+    background-color: #ededed;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#portfoliobody .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#portfoliobody .text_1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 32px;
+
+}
+
+#portfoliobody .text_2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 120px;
+    width: 100%;
+    margin-bottom: 32px;
+
+}
+
+#portfoliobody .text {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+
+    margin-bottom: 15px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.9rem;
+    font-weight: 200;
+    margin-top: 0px;
+    transition: transform 1s;
+
+
+}
+
+#portfoliobody .text:hover {
+    filter: opacity(50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#portfoliobody .text_dropdown {
+    width: 29rem;
+    height: auto;
+    border-radius: 0.8rem;
+
+
+
+    padding: 1.5rem;
+    margin-bottom: 15px;
+
+    margin-top: 0px;
+}
+
+.color_web {
+    background-color: #403A35;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+/* grundlæggende html */
+#portfoliobody .siteknap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #E0CCB7;
+    margin-bottom: 15px;
+
+}
+
+
+
+#portfoliobody .dokumentationknap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #f4e4d5;
+    margin-bottom: 15px;
+
+}
+
+
+
+#portfoliobody .image {
+    flex-grow: 1;
+    flex-basis: 400px
+}
+
+#portfoliobody .knapteskt {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*medi mobil */
+@media only screen and (min-width: 500px) {
+    /*
+    #portfoliobody nav {
+        position: relative;
+    }
+*/
+
+    #portfoliobody .container {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+}
+
+/*medi web */
+@media only screen and (min-width: 600px) {
+    #portfoliobody #menuwrapper {
+        position: absolute;
+    }
+
+    #portfoliobody .container {
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+
+    #portfoliobody .image {
+        flex-basis: 365px;
+    }
+
+
+
+}
+
+/* grundlæggende html */
+
+.fade_in {
+    animation-name: fade_in_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes fade_in_kf {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes fade_out_kf {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+
+    }
+}
+
+/* grundelæggende ux */
+
+#grundloeggende_ux2 .sectionswrapper {
+    background-color: #ADADAD;
+    padding-top: 30px;
+}
+
+#portfoliobody .pfdknap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #c4c0c0;
+    margin-bottom: 15px;
+}
+
+#portfoliobody .pfd_data_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #f2e6ec;
+    margin-bottom: 15px;
+}
+
+
+.color_ux2 {
+    background-color: #E7D1DC;
+}
+
+.color_prototype {
+    background-color: #000000;
+}
+
+.color_designsprint {
+    background-color: #AE3D37;
+}
+
+/* grundlæggende ux design sprint */
+
+#grundloeggende_ux3 .sectionswrapper {
+    background-color: #D4D4D4;
+    padding-top: 30px;
+}
+
+#portfoliobody .pfd_designsprint_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #E85149;
+    margin-bottom: 15px;
+}
+
+#portfoliobody .dokumentation_designsprint_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #233248;
+    margin-bottom: 15px;
+}
+
+/* grundlæggende animation assetliste og design dokumentation */
+
+#portfoliobody .link_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #BCFD5B;
+    margin-bottom: 15px;
+}
+
+/*
+#portfoliobody .image_child:hover {
+    transform: scale(1.4);
+    transition: 1s;
+}
+*/
+
+#portfoliobody .image_child {
+    padding: 10px;
+}
+
+#portfoliobody .image {}
+
+#portfoliobody #box1:hover {
+
+    animation-name: bouncing_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    top: 15vw;
+}
+
+@keyframes bouncing_kf {
+    from {
+        transform: translateY(-3vw);
+    }
+
+    to {
+        transform: translateY(-0vw);
+    }
+}
+
+
+#portfoliobody #box2:hover {
+
+
+    animation-name: pulse_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes pulse_kf {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#portfoliobody #box3:hover {
+    animation-name: fade_out_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes fade_out_kf {
+    from {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    to {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+#portfoliobody #box4:hover {
+    animation-name: glow_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+@keyframes glow_kf {
+    from {
+        filter: drop-shadow(0px 0px 0px #FBCB43);
+    }
+
+    to {
+        filter: drop-shadow(0px 0px 45px #FBCB43);
+    }
+}
+
+#portfoliobody #box5:hover {
+    animation-name: blur_to_gray_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
+}
+
+@keyframes blur_to_gray_kf {
+    from {
+        transform: rotate(0deg);
+        filter: grayscale(0) blur(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+        filter: grayscale(1) blur(5px);
+    }
+}
+
+#portfoliobody #box6:hover {
+    animation-name: shake_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+
+}
+
+@keyframes shake_kf {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@keyframes blink_kf {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#portfoliobody #box7:hover {
+    animation-name: blink_kf;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+
+
+}
+
+.color_asset {
+    background-color: #B2DFE5;
+}
+
+
+
+
+
+
+
+
+/* prototype */
+#portfoliobody .pfd_animation_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #24DD28;
+    margin-bottom: 15px
+}
+
+#portfoliobody #slider {
+    overflow: hidden;
+
+}
+
+#portfoliobody #slider figure {
+    position: relative;
+    width: 400%;
+    margin: 0;
+    left: 0;
+
+    animation: 15s slider infinite;
+    animation-fill-mode: none;
+
+}
+
+#portfoliobody #slider figure img {
+    width: 25%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+#portfoliobody .image_container {
+    display: flex;
+    justify-content: space-around;
+
+    /* gør så de ligger på en lige linje */
+    align-items: baseline;
+}
+
+/* grundlæggende animation - animationsopgave */
+
+#portfoliobody .pfd_animationsopgave_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #833310;
+    margin-bottom: 15px;
+}
+
+#portfoliobody .spil_animationsopgave_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #68280D;
+    margin-bottom: 15px;
+}
+
+#portfoliobody .container_animation_spil {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#portfoliobody iframe {
+
+    border: 0;
+}
+
+#portfoliobody container_animation_spil {
+    width: 100%;
+    height: 100%;
+}
+
+#portfoliobody #grundloeggende_animation2 .sectionswrapper {
+    background-color: #D4D4D4;
+}
+
+.color_shakeit {
+
+    background-color: #2F0807
+}
+
+.color_sex {
+    background-color: #141A23;
+}
+
+.color_pilot {
+    background-color: #6E98A0;
+}
+
+.color_reddesign {
+    background-color: #3B2F2D;
+}
+
+
+
+
+
+/*medi mobil */
+@media only screen and (min-width: 500px) {
+    #portfoliobody iframe {
+        width: 475px;
+        height: 321px;
+    }
+}
+
+/*medi web */
+@media only screen and (min-width: 800px) {
+    #portfoliobody iframe {
+        width: 631px;
+        height: 356px;
+    }
+
+}
+
+/* sex og samfund spil */
+
+#portfoliobody .pfd_sex_og_samfund_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #F08D40;
+    margin-bottom: 15px
+}
+
+#portfoliobody .spil_sex_og_samfund_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #6E98A0;
+    margin-bottom: 15px;
+}
+
+/*redesign af hjemmeside */
+#portfoliobody .link_redesign_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #503F3C;
+    margin-bottom: 15px;
+}
+
+#portfoliobody .pfd_redesign_knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #DFBFA9;
+    margin-bottom: 15px;
+}
+
+#portfoliobody #grundloeggende_content .sectionswrapper {
+    background-color: #ADADAD;
+}
+
+/* content pilot*/
+
+#portfoliobody #grundloeggende_content_pilot .sectionswrapper {
+    background-color: #D4D4D4;
+}
+
+.color_reddesign1 {
+    background-color: #F2E5DD;
+}
+
+/* vis mere*/
+grundloeggende_content_vismere {
+    transition: transform 1s;
+    transform-origin: top right;
+}
